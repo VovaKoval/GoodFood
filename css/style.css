@@ -6,6 +6,14 @@
     height: 100vh;
     overflow: hidden;
 }
+.header_container{
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    justify-content: end;
+    margin-top:40px;
+    z-index: -1000;
+}
 .nav {
     display: inline-block;
     width: 100%;
@@ -148,13 +156,9 @@
     top: 82px;
 }
 .header_text {
-    display: inline-block;
-    float: right;
-    position: absolute;
+    display: block;
     max-width: 587px;
     max-height: 144px;
-    right: 220px;
-    top: 320px;
 }
 .header_txt {
     font-family: Poppins;
@@ -613,45 +617,52 @@
 }
 
 #overflow {
-	max-width: 100%;
+	width: 100%;
     min-height: 403px;
     overflow: hidden;
 }
 
 .coments_wrapper {
+    width: 100%;
     max-width: 344px;
     text-align: center;
     margin: 0 auto;
 }
 
 .coments_wrapper_left {
+    width: 100%;
     max-width: 174px;
     text-align: center;
     margin: 0 auto;
 }
 .coments_wrapper_right {
+    width: 100%;
     max-width: 174px;
     text-align: center;
     margin: 0 auto;
 }
 
 .coments_img_wrapper {
+    width: 100%;
     max-width: 112px;
     border-radius: 100%;
     margin: 0 auto;
 }
 .coments_img_wrapper_left,
 .coments_img_wrapper_right {
+    width: 100%;
     max-width: 96px;
     border-radius: 100%;
     margin: 0 auto;
 }
 
 .coments_img_wrapper img {
+    width: 100%;
     max-width: 112px;
 }
 .coments_img_wrapper_left img,
 .coments_img_wrapper_right img {
+    width: 100%;
     max-width: 96px;
 }
 .coments_name {
@@ -705,6 +716,7 @@
 }
 
 #desktop:checked ~ #slider{
+    width: 100%;
 	max-width: 960px;
 }
 
@@ -718,6 +730,7 @@
 	margin: 0 0 0 -84px;
 	display: block;
 	height: 68px;
+    width: 100%;
 	max-width: 68px;
 }
 
@@ -731,6 +744,7 @@
 	margin: 0 -84px 0 0;
 	display: block;
 	height: 68px;
+    width: 100%;
 	max-width: 68px;
 }
 
@@ -794,14 +808,17 @@ label, a{
 }
 
 #controls{
-	max-width: 90%;
+    display: flex;
+    width: 90%;
 	height: 50px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 #active label{
 	border-radius: 10px;
 	display: inline-block;
+    width: 100%;
 	max-width: 10px;
 	height: 10px;
 	background: #DEDEDE;
@@ -952,6 +969,52 @@ label, a{
         display: none;
     }
 }
-@media (max-width: 770px){
-
+@media (max-width: 600px){
+    .social_media {
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .reviews_section{
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    .wrapper_why_we{
+        display: flex;
+        width: 100%;
+        max-width: 1920px;
+        flex-direction: column;
+        justify-items: center;
+        margin-left: 100px;
+    }
+    .fast_wrapper{
+        margin-left: 97px;
+    }
+}
+@media (max-width: 615px){
+    .header_container{
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+        justify-content: end;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 500px){
+    .wrapper_why_we{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 400px){
+    .wrapper_why_we {
+        margin: 0 auto;
+    }
+    .header_container{
+        height: 200px;
+        margin: 0 auto;
+    }
+    .header_txt{
+        font-size: 30px;
+    }
 }
