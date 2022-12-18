@@ -9,12 +9,17 @@
 .nav {
     display: inline-block;
     width: 100%;
+    max-width: 1920px;
     height: 72px;
     margin: 0 auto;
 }
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo_txt {
     display: inline-block;
-    float: left;
     margin: 32px 0 0 56px;
 }
 .logo_txt h1 {
@@ -34,8 +39,7 @@
 .menu {
     display: inline-block;
     margin-top: 52px;
-    float: right;
-    margin-right: 100px;
+    margin-right: 10px;
 }
 .menu ul {
     display: inline;
@@ -60,14 +64,17 @@
     float: right;
 }
 .search {
-    width: 20.07px;
-    height: 20.07px;
+    max-width: 20.07px;
+    max-height: 20.07px;
     margin-right: 40px;
 }
 .bag img {
-    width: 18.86px;
-    height: 20px;
+    max-width: 18.86px;
+    max-height: 20px;
     margin-left: 40px;
+}
+.logo_fon{
+    width: 1100px;
 }
 .circle1 {
     position: absolute;
@@ -82,8 +89,8 @@
 }
 .tomato1 {
     position: absolute;
-    width: 86px;
-    height: 82px;
+    max-width: 86px;
+    max-height: 82px;
     left: 980px;
     top: 251px;
 }
@@ -127,7 +134,7 @@
 }
 .tomato2 {
     position: absolute;
-    width: 86px;
+    max-width: 86px;
     height: 82px;
     left: 680px;
     top: 570px;
@@ -141,6 +148,7 @@
     top: 82px;
 }
 .header_text {
+    display: inline-block;
     float: right;
     position: absolute;
     max-width: 587px;
@@ -179,7 +187,7 @@
 }
 .btn_menu {
     display: inline;
-    width: 85px;
+    max-width: 85px;
     margin-top: 48px;
     text-align: center;
 }
@@ -198,7 +206,7 @@
 }
 .btn_menu_ored {
     display: inline;
-    width: 120px;
+    max-width: 120px;
     margin-left: 24px;
 }
 .btn_menu_ored a {
@@ -243,25 +251,35 @@
     border-top-right-radius: 50%;
 }
 .two_section_wrapper {
-    min-height: 879px;
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    min-height: 1350px;
     margin-bottom: 100px;
 }
 .section_wrapper1 {
-    display: inline-block;
+    display: block;
     width: 100%;
+    max-width: 1920px;
     height: 400px;
     background: #F5F5F5;
 }
+.section__container{
+    display: flex;
+    justify-content: space-between;
+}
 .title_wrapper {
-    display: inline-block;
+    display: block;
     max-width: 400px;
     height: 0;
     float: right;
 }
 .section_wrapper1_title {
     float: right;
-    width: 500px;
-    margin: 96px 280px 0 0;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 96px;
     /* fonts */
     font-family: Poppins;
     font-style: normal;
@@ -270,7 +288,7 @@
 }
 .section_wrapper1_hr {
     display: inline-block;
-    width: 64px;
+    max-width: 64px;
     margin-top: 19px;
     border: 1px solid #282630;
 }
@@ -281,13 +299,13 @@
     margin: 92px 0 0 98px;
 }
 .circle_price {
-    width: 144px;
+    max-width: 144px;
     height: 144px;
     border: 1px solid #FFDD63;
     border-radius: 100%;
 }
 .circle_price_kkal {
-    width: 110px;
+    max-width: 110px;
     height: 110px;
     margin: 17px;
     background: #FFDD63;
@@ -305,7 +323,7 @@
     color: #65636A;;
 }
 .circle_price_kkal_hr {
-    width: 70px;
+    max-width: 70px;
     border: 1px solid #FAFAFA;
     margin: 0 auto;
     margin-top: 5px;
@@ -320,20 +338,44 @@
     line-height: 150%;
 }
 .price_wrepper_subtitle {
-    display: inline-block;
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
     padding-bottom: 100px;
 }
+.price_title_container{
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    justify-content: space-between;
+    align-items: center;
+}
+.price__container{
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    justify-content: space-between;
+}
+.price__container_block{
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+}
 .price_wrapper {
-    display: inline-block;
+    display: block;
+    width: 100%;
     max-width: 590px;
     padding-top: 83px;
     margin-left: 133px;
     text-align: center;
 }
 .image_price {
-    position: relative;
-    width: 555px;
+    width: 590px;
     height: 559px;
+}
+.image_price img {
+    width: 590px;
 }
 .price_title {
     text-align: center;
@@ -364,6 +406,9 @@
     line-height: 150%;
 }
 .btn_price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     max-width: 195px;
     margin: 0 auto;
 }
@@ -404,10 +449,10 @@
 }
 .price_wrapper2 {
     display: inline-block;
+    width: 100%;
     max-width: 299px;
     margin-left: 50px;
     text-align: center;
-    position: relative;
     bottom: 120px;
 }
 .btn_price2 {
@@ -426,26 +471,27 @@
 }
 .price_wrapper3 {
     display: inline-block;
+    width: 100%;
     max-width: 299px;
     margin-left: 100px;
     text-align: center;
-    position: relative;
     bottom: 50px;
 }
 .price_wrapper4 {
     display: inline-block;
+    width: 100%;
     max-width: 299px;
     text-align: center;
     margin-left: 100px;
-    position: relative;
     bottom: 100px;
 }
 .why_we_wrapper {
     margin-top: 61px;
     background: #FEE382;
+    z-index: 10;
 }
 .why_we_title {
-    width: 227px;
+    max-width: 227px;
     margin: 0 auto;
     padding-top: 48px;
     padding-bottom: 19px;
@@ -527,7 +573,7 @@
     margin-top: 96px;
 }
 .reviews_title {
-    width: 200px;
+    max-width: 200px;
     margin: 0 auto;
 }
 .reviews_title h1 {
@@ -540,7 +586,7 @@
     line-height: 72px;
 }
 .reviews_title_hr {
-    width: 64px;
+    max-width: 64px;
     margin-bottom: 88px;
     border: 1px solid #282630;
 }
@@ -557,17 +603,17 @@
 }
 
 #slides article {
-	width: 20%;
+	max-width: 20%;
 	float: left;
 }
 
 #slides .coments_all_wrapper {
-	width: 180%;
+	max-width: 180%;
 	line-height: 0;
 }
 
 #overflow {
-	width: 100%;
+	max-width: 100%;
     min-height: 403px;
     overflow: hidden;
 }
@@ -584,29 +630,29 @@
     margin: 0 auto;
 }
 .coments_wrapper_right {
-    width: 174px;
+    max-width: 174px;
     text-align: center;
     margin: 0 auto;
 }
 
 .coments_img_wrapper {
-    width: 112px;
+    max-width: 112px;
     border-radius: 100%;
     margin: 0 auto;
 }
 .coments_img_wrapper_left,
 .coments_img_wrapper_right {
-    width: 96px;
+    max-width: 96px;
     border-radius: 100%;
     margin: 0 auto;
 }
 
 .coments_img_wrapper img {
-    width: 112px;
+    max-width: 112px;
 }
 .coments_img_wrapper_left img,
 .coments_img_wrapper_right img {
-    width: 96px;
+    max-width: 96px;
 }
 .coments_name {
     text-align: center;
@@ -672,7 +718,7 @@
 	margin: 0 0 0 -84px;
 	display: block;
 	height: 68px;
-	width: 68px;
+	max-width: 68px;
 }
 
 #switch1:checked ~ #controls label:nth-child(2), 
@@ -685,7 +731,7 @@
 	margin: 0 -84px 0 0;
 	display: block;
 	height: 68px;
-	width: 68px;
+	max-width: 68px;
 }
 
 label, a{
@@ -748,7 +794,7 @@ label, a{
 }
 
 #controls{
-	width: 90%;
+	max-width: 90%;
 	height: 50px;
     margin: 0 auto;
 }
@@ -756,7 +802,7 @@ label, a{
 #active label{
 	border-radius: 10px;
 	display: inline-block;
-	width: 10px;
+	max-width: 10px;
 	height: 10px;
 	background: #DEDEDE;
     margin-right: 32px;
@@ -799,8 +845,16 @@ label, a{
 }
 .footer_wrapper {
     display: inline-block;
-    max-width: 1808px;
+    width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
+}
+.footer_container{
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer_logo {
     display: inline-block;
@@ -816,9 +870,13 @@ label, a{
     color: #FAFAFA;
 }
 .footer_menu {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    margin-left: 508px;
+    width: 100%;
+    max-width: 416px;
+    
 }
 .footer_menu ul {
     display: inline;
@@ -839,7 +897,7 @@ label, a{
     line-height: 150%;
 }
 .footer_btn {
-    display: inline-block;
+    display: block;
     margin-left: 400px;
 }
 .footer_btn h6 a {
@@ -856,6 +914,7 @@ label, a{
     color: #282630;
 }
 .footer_hr {
+    display: block;
     margin-top: 29px;
     margin-left: 31px;
     margin-bottom: 29px;
@@ -874,4 +933,25 @@ label, a{
     font-size: 12px;
     line-height: 18px;
     color: #65636A;
+}
+@media (max-width: 1200px){
+    .logo_fon{
+        display: none;
+    }
+}
+@media (max-width: 550px){
+    .footer_btn{
+        display: none;
+    }
+}
+@media (max-width: 1200px){
+    .price_wrapper4{
+        display: none;
+    }
+    .two_section_wrapper{
+        display: none;
+    }
+}
+@media (max-width: 770px){
+
 }
